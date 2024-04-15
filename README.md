@@ -40,7 +40,7 @@
 <br>
 
 ## Link do Video pitch
-xxxxxxxxxxx
+https://youtu.be/lUahXy806d0?si=xQI5JhbNQ0Z6B9N8
 
 <br>
 
