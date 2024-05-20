@@ -30,15 +30,15 @@
 }
 #### DELETE /userdata/delete/{id} para deletar um usuario por ID
 #### Os dados são apenas exemplos podem ser alterados por qualquer nome, qualquer idade, qualquer genero, qualquer estado brasileiro usando as siglas do  respectivo estado como sp, rj, mg etc, e se a pessoa comprou pode ser usado sim ou não
-<br>
-#### POST /register: Registrar um novo usuário
+
+#### POST /register: Registrar uma nova conta 
 {
    <br> "username": "novoUsuario",<br>
     "password": "senhaSegura"<br>
 }
-#### POST /login: Realizar login com um usuário existente.
+#### POST /login: Realizar login com a conta pré existente 
 {
-    <br"username": "usuarioExistente",<br>
+    <br>"username": "usuarioExistente",<br>
     "password": "senhaSegura"<br>
 }
 #### GET /swagger-ui.html: Acessar a documentação interativa da API gerada pelo Swagger
