@@ -31,6 +31,18 @@
 #### DELETE /userdata/delete/{id} para deletar um usuario por ID
 #### Os dados são apenas exemplos podem ser alterados por qualquer nome, qualquer idade, qualquer genero, qualquer estado brasileiro usando as siglas do  respectivo estado como sp, rj, mg etc, e se a pessoa comprou pode ser usado sim ou não
 <br>
+#### POST /register: Registrar um novo usuário
+{
+   <br> "username": "novoUsuario",<br>
+    "password": "senhaSegura"<br>
+}
+#### POST /login: Realizar login com um usuário existente.
+{
+    <br"username": "usuarioExistente",<br>
+    "password": "senhaSegura"<br>
+}
+#### GET /swagger-ui.html: Acessar a documentação interativa da API gerada pelo Swagger
+
 
 ## Imagens dos diagramas
 ![image](https://github.com/Pedroduartefarias/JavaAdvancedChallenge/assets/125598806/dd05abaf-1fcd-4b30-8600-48b7afa43634) <br>
@@ -78,9 +90,21 @@ https://youtu.be/lUahXy806d0?si=xQI5JhbNQ0Z6B9N8
     public void deleteUser(@PathVariable Long id) {
         userDataRepository.deleteById(id);
     }
+    
+    Endpoint para registrar uma nova conta
+    @PostMapping("/register")
+public ResponseEntity<String> register(@RequestBody User user) {
+    userService.save(user);
+    return ResponseEntity.ok("User registered successfully");
+}
+Endpoint para login na conta criada
+@PostMapping("/login")
+public ResponseEntity<String> login(@RequestBody AuthRequest authRequest) {
+    return ResponseEntity.ok("Login successful");
+}
 
 <br>
-* O codigo fonte esta no master
+* O codigo fonte esta no main
 
 
 
