@@ -45,9 +45,11 @@
 
 
 ## Imagens dos diagramas
-![image](https://github.com/Pedroduartefarias/JavaAdvancedChallenge/assets/125598806/dd05abaf-1fcd-4b30-8600-48b7afa43634) <br>
+![image](https://github.com/Pedroduartefarias/JavaAdvancedChallenge/assets/125598806/0a33760c-281e-4507-830e-46aa1d3595c7)
+) <br>
 
-![image](https://github.com/Pedroduartefarias/JavaAdvancedChallenge/assets/125598806/43ea972e-f7e1-4e98-8e17-9ceaf039f2c9)
+![image](https://github.com/Pedroduartefarias/JavaAdvancedChallenge/assets/125598806/cf428c4f-7a3a-46fc-852c-62307cc90a0d)
+
 
 <br>
 
@@ -57,7 +59,8 @@ https://youtu.be/lUahXy806d0?si=xQI5JhbNQ0Z6B9N8
 <br>
 
 ## Listagem dos endpoints
- Endpoint para adicionar um novo usuário
+
+    Endpoint para adicionar um novo usuário
     @PostMapping("/add")
     public UserData addUser(@RequestBody UserData userData) {
         return userDataRepository.save(userData);
@@ -93,15 +96,15 @@ https://youtu.be/lUahXy806d0?si=xQI5JhbNQ0Z6B9N8
     
     Endpoint para registrar uma nova conta
     @PostMapping("/register")
-public ResponseEntity<String> register(@RequestBody User user) {
+    public ResponseEntity<String> register(@RequestBody User user) {
     userService.save(user);
     return ResponseEntity.ok("User registered successfully");
-}
-Endpoint para login na conta criada
-@PostMapping("/login")
-public ResponseEntity<String> login(@RequestBody AuthRequest authRequest) {
-    return ResponseEntity.ok("Login successful");
-}
+    }
+    Endpoint para login na conta criada
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody AuthRequest authRequest) {
+        return ResponseEntity.ok("Login successful");
+    }
 
 <br>
 * O codigo fonte esta no main
