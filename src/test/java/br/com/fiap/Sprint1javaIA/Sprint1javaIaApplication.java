@@ -1,4 +1,4 @@
-package br.com.fiap.Sprint1javaIA;
+/*package br.com.fiap.Sprint1javaIA;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,4 +11,4 @@ public class Sprint1javaIaApplication {
     public static void main(String[] args) {
         SpringApplication.run(Sprint1javaIaApplication.class, args);
     }
-}
+}*/
