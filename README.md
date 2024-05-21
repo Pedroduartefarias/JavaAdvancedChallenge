@@ -106,8 +106,9 @@ https://youtu.be/lUahXy806d0?si=xQI5JhbNQ0Z6B9N8
         return ResponseEntity.ok("Login successful");
     }
 
-<br>
+
 * O codigo fonte esta no main
+#### As principais diferenças da Sprint 1 para a Sprint 2 foram: a criação de um sistema de login onde o cliente antes de cadastrar os dados precisa criar a sua conta, a implementação do swagger e a implementação do banco de dados oracle
 
 
 
